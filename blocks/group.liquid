@@ -1,6 +1,6 @@
 {% comment %} [START nesting.block_render] {% endcomment %}
 <div
-  class="{{ block.settings | class_list }} group-block group-block--{{ block.id }} color-{{ block.settings.color_scheme }}"
+  class="{{ block.settings | class_list }} group-block group-block--{{ block.id }} color-{{ block.settings.color_scheme }} sm:color-{{ block.settings.mm_color_scheme_mobile }}"
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}
@@ -55,6 +55,12 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "mm_color_scheme_mobile",
+      "label": "Mobile color scheme",
       "default": "scheme-1"
     }
   ],

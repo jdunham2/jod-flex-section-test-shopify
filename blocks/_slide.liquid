@@ -1,3 +1,16 @@
+{% stylesheet %}
+  @media (max-width: 749px) {
+    .sm\:mm-hidden {
+      display: none;
+    }
+  }
+  @media (min-width: 750px) {
+    .lg\:mm-hidden {
+      display: none;
+    }
+  }
+{% endstylesheet %}
+
 {%- liquid
   assign blockIndex = 0
   for sectionBlock in section.blocks
@@ -29,18 +42,36 @@
         assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
         assign sizes = '100vw'
         assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+        # MM - Add mobile image
+        assign mm_mobile_image = block.settings.mm_mobile_image
+        if mm_mobile_image == blank
+          assign mm_mobile_image = block.settings.image
+        endif
+        assign mobile_height = mm_mobile_image.width | divided_by: mm_mobile_image.aspect_ratio | round
+        assign mobile_sizes = '100vw'
+        assign mobile_widths = '375, 550, 750, 1100, 1500'
       -%}
       {%- if blockIndex == 1 -%}
         {{
           block.settings.image
           | image_url: width: 3840
-          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager'
+          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager', class: 'sm:mm-hidden'
+        }}
+        {{
+          mm_mobile_image
+          | image_url: width: 1500
+          | image_tag: height: mobile_height, sizes: mobile_sizes, widths: mobile_widths, loading: 'eager', class: 'lg:mm-hidden'
         }}
       {%- else -%}
         {{
           block.settings.image
           | image_url: width: 3840
-          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'lazy'
+          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'lazy', class: 'sm:mm-hidden'
+        }}
+        {{
+          mm_mobile_image
+          | image_url: width: 1500
+          | image_tag: height: mobile_height, sizes: mobile_sizes, widths: mobile_widths, loading: 'lazy', class: 'lg:mm-hidden'
         }}
       {%- endif -%}
     {%- else -%}
@@ -67,6 +98,20 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mm_mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "style.size_panel",
+      "id": "size",
+      "label": "Size",
+      "default": {
+        "width": "100%",
+        "flex-grow": "1"
+      }
     },
     {
       "type": "style.spacing_panel",
