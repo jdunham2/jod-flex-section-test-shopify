@@ -13,7 +13,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "heading_mqAgUH": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h1>{{ closest.collection.title }}</h1>",
             "alignment": "start"
@@ -57,7 +57,7 @@
               }
             },
             "price_fiTWdm": {
-              "type": "price-v-1-0",
+              "type": "ss-price-v-1-0",
               "settings": {
                 "product": "{{ closest.product }}"
               }

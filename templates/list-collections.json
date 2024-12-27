@@ -13,7 +13,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "collection-list-heading": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h1>Collections</h1>",
             "alignment": "start"
@@ -41,13 +41,13 @@
           "settings": {},
           "blocks": {
             "collection-image": {
-              "type": "image-v-1-0",
+              "type": "ss-image-v-1-0",
               "settings": {
                 "image": "{{ closest.collection.image }}"
               }
             },
             "ss-collection-title": {
-              "type": "collection-title-v-1-0",
+              "type": "ss-collection-title-v-1-0",
               "settings": {
                 "heading_size": "h4"
               }

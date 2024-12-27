@@ -15,7 +15,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "5b635cb0-c1b4-408f-a776-d6977e4ff9d4": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "layout": {
               "flex-direction": "row",
@@ -123,7 +123,7 @@
           ]
         },
         "group_VFkXXa": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "layout": {
               "flex-direction": "row",
@@ -144,7 +144,7 @@
           },
           "blocks": {
             "group_reBQFj": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "layout": {
                   "flex-direction": "column",
@@ -162,7 +162,7 @@
               },
               "blocks": {
                 "text_F6mpHV": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<h3>Get to know us</h3>",
                     "alignment": "start"
@@ -198,7 +198,7 @@
               ]
             },
             "group_XWypQL": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "layout": {
                   "flex-direction": "column",
@@ -216,14 +216,14 @@
               },
               "blocks": {
                 "text_aGWxfA": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<h3>Our mission</h3>",
                     "alignment": "start"
                   }
                 },
                 "text_mWDYXd": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>Add details about your store’s mission or values. Give your visitors an idea of your approach to customer service, sustainability, and more.<\/p>",
                     "text_style": "",
@@ -243,7 +243,7 @@
           ]
         },
         "8a18b664-2c69-4e8a-b6ae-a5cf39d3ad38": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "layout": {
               "flex-direction": "column",
@@ -260,7 +260,7 @@
           },
           "blocks": {
             "group_L9Ac4q": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "layout": {
                   "flex-direction": "row",
@@ -290,7 +290,7 @@
               ]
             },
             "group_WQUiKt": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "layout": {
                   "flex-direction": "row",
@@ -310,7 +310,7 @@
               },
               "blocks": {
                 "text_wwA6m9": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>© 2023, <a href=\"\/\" title=\"\/\">Store name<\/a><\/p>",
                     "text_style": "text-block-caption",
@@ -322,7 +322,7 @@
                   }
                 },
                 "text_Lgry8R": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p><a href=\"https:\/\/www.shopify.com\/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore\" target=\"_blank\" title=\"https:\/\/www.shopify.com\/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore\">Powered by Shopify<\/a><\/p>",
                     "text_style": "text-block-caption",

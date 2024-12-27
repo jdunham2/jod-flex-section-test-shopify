@@ -122,7 +122,7 @@
           },
           "blocks": {
             "group_AYLEbA": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "size": {
                   "width": "50%",
@@ -153,7 +153,7 @@
               },
               "blocks": {
                 "text_BFbgT7": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>Tell your brand's story through images</p>",
                     "text_style": "text-block-caption",
@@ -163,7 +163,7 @@
                   }
                 },
                 "text_wWNYLa": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<h1>Tell your brand's story through images</h1>",
                     "text_style": "",
@@ -173,7 +173,7 @@
                   }
                 },
                 "group_fAyw9i": {
-                  "type": "group-v-1-0",
+                  "type": "ss-group-v-1-0",
                   "settings": {
                     "size": {},
                     "spacing": {
@@ -257,7 +257,7 @@
           },
           "blocks": {
             "group_tX6xMR": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "size": {
                   "width": "50%",
@@ -287,7 +287,7 @@
               },
               "blocks": {
                 "text_ertfGh": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>Tell your brand's story through images</p>",
                     "text_style": "",
@@ -350,7 +350,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "text_BHYEy3": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h2>Featured collection</h2>",
             "text_style": "",
@@ -407,7 +407,7 @@
                   }
                 },
                 "price_RhcUJE": {
-                  "type": "price-v-1-0",
+                  "type": "ss-price-v-1-0",
                   "settings": {
                     "product": "{{ closest.product }}",
                     "size": {},
@@ -415,7 +415,7 @@
                   }
                 },
                 "text_z3F6QD": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                     "text_style": "text-block-caption",
@@ -457,7 +457,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "group_x8rBYi": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "75%"
@@ -472,7 +472,7 @@
           },
           "blocks": {
             "text_7HapGw": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<h1>Rich text</h1>",
                 "text_style": "",
@@ -482,7 +482,7 @@
               }
             },
             "text_QNCakL": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                 "text_style": "",
@@ -517,7 +517,7 @@
           ]
         },
         "group_PKcFBX": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {},
             "spacing": {},
@@ -527,7 +527,7 @@
           },
           "blocks": {
             "image_JGgbMn": {
-              "type": "image-v-1-0",
+              "type": "ss-image-v-1-0",
               "settings": {
                 "object_fit": "cover",
                 "spacing": {},
@@ -535,7 +535,7 @@
               }
             },
             "group_F9UJy7": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "size": {},
                 "spacing": {
@@ -554,7 +554,7 @@
               },
               "blocks": {
                 "text_WyVzqb": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<h3>Column</h3>",
                     "text_style": "",
@@ -564,7 +564,7 @@
                   }
                 },
                 "text_QKNEYm": {
-                  "type": "text-v-1-0",
+                  "type": "ss-text-v-1-0",
                   "settings": {
                     "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
                     "text_style": "",
@@ -614,7 +614,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "41e666be-a592-4acf-9961-469beb09b1eb": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h2>Collections</h2>",
             "text_style": "",
@@ -624,7 +624,7 @@
           }
         },
         "ff102392-368f-41d9-883a-9c1cd4be4d84": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%"
@@ -655,7 +655,7 @@
               },
               "blocks": {
                 "image_JPFbHD": {
-                  "type": "image-v-1-0",
+                  "type": "ss-image-v-1-0",
                   "settings": {
                     "image": "{{ closest.collection.image }}",
                     "object_fit": "cover",
@@ -664,7 +664,7 @@
                   }
                 },
                 "collection_title_6TbyVH": {
-                  "type": "collection-title-v-1-0",
+                  "type": "ss-collection-title-v-1-0",
                   "settings": {
                     "collection": "{{ closest.collection }}",
                     "heading_size": "h4",
@@ -689,7 +689,7 @@
               },
               "blocks": {
                 "image_CPj9m9": {
-                  "type": "image-v-1-0",
+                  "type": "ss-image-v-1-0",
                   "settings": {
                     "image": "{{ closest.collection.image }}",
                     "object_fit": "cover",
@@ -698,7 +698,7 @@
                   }
                 },
                 "collection_title_wnEkaU": {
-                  "type": "collection-title-v-1-0",
+                  "type": "ss-collection-title-v-1-0",
                   "settings": {
                     "collection": "{{ closest.collection }}",
                     "heading_size": "h4",
@@ -723,7 +723,7 @@
               },
               "blocks": {
                 "image_NzHXGX": {
-                  "type": "image-v-1-0",
+                  "type": "ss-image-v-1-0",
                   "settings": {
                     "image": "{{ closest.collection.image }}",
                     "object_fit": "cover",
@@ -732,7 +732,7 @@
                   }
                 },
                 "collection_title_3CnknM": {
-                  "type": "collection-title-v-1-0",
+                  "type": "ss-collection-title-v-1-0",
                   "settings": {
                     "collection": "{{ closest.collection }}",
                     "heading_size": "h4",
@@ -779,7 +779,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "image_qLBgRH": {
-          "type": "image-v-1-0",
+          "type": "ss-image-v-1-0",
           "settings": {
             "object_fit": "cover",
             "spacing": {},
@@ -793,7 +793,7 @@
           }
         },
         "group_BcTBGi": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%",
@@ -816,7 +816,7 @@
           },
           "blocks": {
             "text_zQL3DW": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<h1>Image with text</h1>",
                 "text_style": "",
@@ -826,7 +826,7 @@
               }
             },
             "text_mEFQnx": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
                 "text_style": "",
@@ -881,7 +881,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "text_N7jmpy": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h2>Multimedia collage</h2>",
             "text_style": "",
@@ -891,7 +891,7 @@
           }
         },
         "group_LrBxgw": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {},
             "spacing": {
@@ -906,7 +906,7 @@
           },
           "blocks": {
             "group_A3Jhra": {
-              "type": "group-v-1-0",
+              "type": "ss-group-v-1-0",
               "settings": {
                 "size": {
                   "width": "48%",
@@ -930,7 +930,7 @@
               },
               "blocks": {
                 "image_HxUm9V": {
-                  "type": "image-v-1-0",
+                  "type": "ss-image-v-1-0",
                   "settings": {
                     "object_fit": "cover",
                     "spacing": {},
@@ -953,7 +953,7 @@
                   },
                   "blocks": {
                     "image_i6GYY7": {
-                      "type": "image-v-1-0",
+                      "type": "ss-image-v-1-0",
                       "settings": {
                         "image": "{{ closest.collection.image }}",
                         "object_fit": "cover",
@@ -962,7 +962,7 @@
                       }
                     },
                     "collection_title_gjenUt": {
-                      "type": "collection-title-v-1-0",
+                      "type": "ss-collection-title-v-1-0",
                       "settings": {
                         "collection": "{{ closest.collection }}",
                         "heading_size": "h4",
@@ -993,7 +993,7 @@
               },
               "blocks": {
                 "image_wHhybY": {
-                  "type": "image-v-1-0",
+                  "type": "ss-image-v-1-0",
                   "settings": {
                     "image": "{{ closest.collection.image }}",
                     "object_fit": "cover",
@@ -1002,7 +1002,7 @@
                   }
                 },
                 "collection_title_eqPK3z": {
-                  "type": "collection-title-v-1-0",
+                  "type": "ss-collection-title-v-1-0",
                   "settings": {
                     "collection": "{{ closest.collection }}",
                     "heading_size": "h4",
@@ -1047,7 +1047,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "text_y84T7H": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h2>Collapsible content</h2>",
             "text_style": "",
@@ -1057,7 +1057,7 @@
           }
         },
         "group_iabYjG": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%"
@@ -1083,7 +1083,7 @@
               "settings": {},
               "blocks": {
                 "group_igxqEV": {
-                  "type": "group-v-1-0",
+                  "type": "ss-group-v-1-0",
                   "settings": {
                     "size": {
                       "width": "100%"
@@ -1104,7 +1104,7 @@
                   },
                   "blocks": {
                     "text_PkQ8zn": {
-                      "type": "text-v-1-0",
+                      "type": "ss-text-v-1-0",
                       "settings": {
                         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                         "text_style": "",
@@ -1146,7 +1146,7 @@
               "settings": {},
               "blocks": {
                 "group_mgPLTf": {
-                  "type": "group-v-1-0",
+                  "type": "ss-group-v-1-0",
                   "settings": {
                     "size": {
                       "width": "100%"
@@ -1167,7 +1167,7 @@
                   },
                   "blocks": {
                     "text_Vkg9zR": {
-                      "type": "text-v-1-0",
+                      "type": "ss-text-v-1-0",
                       "settings": {
                         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                         "text_style": "",
@@ -1209,7 +1209,7 @@
               "settings": {},
               "blocks": {
                 "group_BqmeC9": {
-                  "type": "group-v-1-0",
+                  "type": "ss-group-v-1-0",
                   "settings": {
                     "size": {
                       "width": "100%"
@@ -1230,7 +1230,7 @@
                   },
                   "blocks": {
                     "text_knXnFF": {
-                      "type": "text-v-1-0",
+                      "type": "ss-text-v-1-0",
                       "settings": {
                         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                         "text_style": "",
@@ -1272,7 +1272,7 @@
               "settings": {},
               "blocks": {
                 "group_gtJd6c": {
-                  "type": "group-v-1-0",
+                  "type": "ss-group-v-1-0",
                   "settings": {
                     "size": {
                       "width": "100%"
@@ -1292,7 +1292,7 @@
                   },
                   "blocks": {
                     "text_PHPiVJ": {
-                      "type": "text-v-1-0",
+                      "type": "ss-text-v-1-0",
                       "settings": {
                         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
                         "text_style": "",
@@ -1361,7 +1361,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "text_HebfQi": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<h2>Subscribe to our newsletter</h2>",
             "text_style": "",
@@ -1371,7 +1371,7 @@
           }
         },
         "text_b37mxx": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
             "text_style": "",
@@ -1381,7 +1381,7 @@
           }
         },
         "newsletter_nfLQzr": {
-          "type": "newsletter-v-1-0",
+          "type": "ss-newsletter-v-1-0",
           "settings": {
             "size": {},
             "spacing": {}
@@ -1412,7 +1412,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "group_hwEiRw": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%"
@@ -1451,7 +1451,7 @@
               }
             },
             "text_gJfdq3": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<p>Pair text with an icon to highlight aspects of your business.</p>",
                 "text_style": "",
@@ -1467,7 +1467,7 @@
           ]
         },
         "group_KyK7Ha": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%"
@@ -1506,7 +1506,7 @@
               }
             },
             "text_9dxFC9": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<p>Pair text with an icon to highlight aspects of your business.</p>",
                 "text_style": "",
@@ -1522,7 +1522,7 @@
           ]
         },
         "group_rUTJ6Y": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "100%"
@@ -1561,7 +1561,7 @@
               }
             },
             "text_TNH97M": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<p>Pair text with an icon to highlight aspects of your business.</p>",
                 "text_style": "",

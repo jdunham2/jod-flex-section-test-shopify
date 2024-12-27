@@ -13,7 +13,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "text_tVEjK7": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<p>This template is not available in the Theme blocks developer preview.<\/p>",
             "text_style": "",

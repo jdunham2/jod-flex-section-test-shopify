@@ -89,7 +89,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "9358ead7-959e-4cdd-b971-5a08e53c7729": {
-          "type": "text-v-1-0",
+          "type": "ss-text-v-1-0",
           "settings": {
             "text": "<p>Welcome to the Flex sections developer preview</p>",
             "text_style": "",
@@ -128,7 +128,7 @@
       "type": "ss-custom-section-v-1-0",
       "blocks": {
         "group_QwzE6T": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "20%",
@@ -151,7 +151,7 @@
           },
           "blocks": {
             "heading_HeFnwz": {
-              "type": "text-v-1-0",
+              "type": "ss-text-v-1-0",
               "settings": {
                 "text": "<h2><a href=\"/\" title=\"/\">Store name</a></h2>",
                 "text_style": "",
@@ -166,7 +166,7 @@
           ]
         },
         "group_MMGbDg": {
-          "type": "group-v-1-0",
+          "type": "ss-group-v-1-0",
           "settings": {
             "size": {
               "width": "80%",
