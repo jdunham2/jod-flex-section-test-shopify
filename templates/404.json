@@ -10,17 +10,17 @@
  {
   "sections": {
     "group": {
-      "type": "custom-section",
+      "type": "ss-custom-section-v-1-0",
       "blocks": {
         "heading_HzQryn": {
-          "type": "text",
+          "type": "text-v-1-0",
           "settings": {
             "text": "<h1>404</h1>",
             "alignment": "start"
           }
         },
         "text_4KQrBa": {
-          "type": "text",
+          "type": "text-v-1-0",
           "settings": {
             "text": "<p>Page not found.</p>",
             "text_style": "",
@@ -28,7 +28,7 @@
           }
         },
         "link_xg7d8w": {
-          "type": "link",
+          "type": "ss-link-v-1-0",
           "settings": {
             "link": "\/",
             "label": "Go to Home page",

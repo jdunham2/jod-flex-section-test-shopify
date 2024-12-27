@@ -10,10 +10,10 @@
 {
   "sections": {
     "collection-header": {
-      "type": "custom-section",
+      "type": "ss-custom-section-v-1-0",
       "blocks": {
         "heading_mqAgUH": {
-          "type": "text",
+          "type": "text-v-1-0",
           "settings": {
             "text": "<h1>{{ closest.collection.title }}</h1>",
             "alignment": "start"
@@ -33,31 +33,31 @@
       }
     },
     "main-collection": {
-      "type": "main-collection",
+      "type": "ss-main-collection-v-1-0",
       "blocks": {
         "collection-product-card": {
-          "type": "product-card",
+          "type": "ss-product-card-v-1-0",
           "static": true,
           "settings": {
             "product": "{{ closest.product }}"
           },
           "blocks": {
             "product_medias_Gawh7G": {
-              "type": "product-medias",
+              "type": "ss-product-medias-v-1-0",
               "settings": {
                 "product": "{{ closest.product }}",
                 "media_featured": true,
               }
             },
             "title_zGnXr7": {
-              "type": "product-title",
+              "type": "ss-product-title-v-1-0",
               "settings": {
                 "product": "{{ closest.product }}",
                 "heading_size": "h5",
               }
             },
             "price_fiTWdm": {
-              "type": "price",
+              "type": "price-v-1-0",
               "settings": {
                 "product": "{{ closest.product }}"
               }

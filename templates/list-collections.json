@@ -10,10 +10,10 @@
 {
   "sections": {
     "collection-list-header": {
-      "type": "custom-section",
+      "type": "ss-custom-section-v-1-0",
       "blocks": {
         "collection-list-heading": {
-          "type": "text",
+          "type": "text-v-1-0",
           "settings": {
             "text": "<h1>Collections</h1>",
             "alignment": "start"
@@ -33,21 +33,21 @@
       }
     },
     "main-collection": {
-      "type": "main-list-collections",
+      "type": "ss-main-list-collections-v-1-0",
       "blocks": {
         "collection-card": {
-          "type": "collection-card",
+          "type": "ss-collection-card-v-1-0",
           "static": true,
           "settings": {},
           "blocks": {
             "collection-image": {
-              "type": "image",
+              "type": "image-v-1-0",
               "settings": {
                 "image": "{{ closest.collection.image }}"
               }
             },
-            "collection-title": {
-              "type": "collection-title",
+            "ss-collection-title": {
+              "type": "collection-title-v-1-0",
               "settings": {
                 "heading_size": "h4"
               }
@@ -55,7 +55,7 @@
           },
           "block_order": [
             "collection-image",
-            "collection-title"
+            "ss-collection-title"
           ]
         }
       },
