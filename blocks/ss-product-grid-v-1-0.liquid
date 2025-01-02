@@ -13,7 +13,7 @@
   {% if products != blank %}
     <ul
       class='ss-product-grid ss-product-grid--{{ section.id }}'
-      style='--product-grid-columns-desktop: repeat({{ block.settings.columns_desktop}}, 1fr);'
+      style='--ss-product-grid-columns-desktop: repeat({{ block.settings.columns_desktop}}, 1fr);'
     >
       {% for product in products limit: block.settings.products_to_show %}
         <li>

@@ -3,43 +3,43 @@
 <style>
   {%-liquid
       # NOTE: CHANGES HERE MUST BE REFLECTED IN
-      #  - blocks/_global-color-schemes.liquid
+      #  - blocks/_ss-color-schemes.liquid
       #  - blocks/_ss-color-scheme.liquid -- this file
       #  - tailwind.config.js
-      assign key_background = 'background_color' | append: i
-      assign key_background_gradient = 'background_gradient_color' | append: i
-      assign key_text_on_surface = 'text_on_surface' | append: i
-      assign key_text_on_surface_variant = 'text_on_surface_variant' | append: i
-      assign key_primary_button_background = 'primary_button_color' | append: i
-      assign key_on_primary_button = 'on_primary_button_color' | append: i
-      assign key_primary_button_border = 'primary_button_border_color' | append: i
-      assign key_secondary_button_background = 'secondary_button_color' | append: i
-      assign key_on_secondary_button = 'on_secondary_button_color' | append: i
-      assign key_secondary_button_border = 'secondary_button_border_color' | append: i
-      assign key_icons = 'icons' | append: i
-      assign key_links = 'links' | append: i
-      assign key_shadow = 'shadow_color' | append: i
+      assign key_background = 'background' | append: i
+      assign key_background_gradient = 'background_gradient' | append: i
+      assign key_text = 'text' | append: i
+      assign key_button_color = 'button' | append: i
+      assign key_button_label_color = 'button_label' | append: i
+      assign key_secondary_button_label_color = 'secondary_button_label' | append: i
   -%}
   #shopify-section-{{ section.id }},
   #shopify-section-{{ section.id }} .ss-color-{{ section.settings.color_scheme }} {
-      --color-background-surface: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
-      --color-background-surface-alpha: {{ block.settings[key_background].alpha }};
-      {% if block.settings[key_background_gradient] != empty %}
-          --gradient-background: {{ block.settings[key_background_gradient] }};
-      {% else %}
-          --gradient-background: {{ block.settings[key_background] }};
-      {% endif %}
-      --color-text-on-surface: {{ block.settings[key_text_on_surface].red }},{{ block.settings[key_text_on_surface].green }},{{ block.settings[key_text_on_surface].blue }};
-      --color-text-on-surface-variant: {{ block.settings[key_text_on_surface_variant].red }},{{ block.settings[key_text_on_surface_variant].green }},{{ block.settings[key_text_on_surface_variant].blue }};
-      --color-primary: {{ block.settings[key_primary_button_background].red }},{{ block.settings[key_primary_button_background].green }},{{ block.settings[key_primary_button_background].blue }};
-      --color-on-primary: {{ block.settings[key_on_primary_button].red }},{{ block.settings[key_on_primary_button].green }},{{ block.settings[key_on_primary_button].blue }};
-      --color-border-primary: {{ block.settings[key_primary_button_border].red }},{{ block.settings[key_primary_button_border].green }},{{ block.settings[key_primary_button_border].blue }};
-      --color-secondary: {{ block.settings[key_secondary_button_background].red }},{{ block.settings[key_secondary_button_background].green }},{{ block.settings[key_secondary_button_background].blue }};
-      --color-on-secondary: {{ block.settings[key_on_secondary_button].red }},{{ block.settings[key_on_secondary_button].green }},{{ block.settings[key_on_secondary_button].blue }};
-      --color-border-secondary: {{ block.settings[key_secondary_button_border].red }},{{ block.settings[key_secondary_button_border].green }},{{ block.settings[key_secondary_button_border].blue }};
-      --color-link: {{ block.settings[key_links].red }},{{ block.settings[key_links].green }},{{ block.settings[key_links].blue }};
-      --color-icons: {{ block.settings[key_icons].red }},{{ block.settings[key_icons].green }},{{ block.settings[key_icons].blue }};
-      --color-shadow: {{ block.settings[key_shadow].red }},{{ block.settings[key_shadow].green }},{{ block.settings[key_shadow].blue }};
+      --ss-color-background: {{ block.settings[key_background] }};
+          {% if block.settings[key_background_gradient] != empty %}
+          --ss-gradient-background: {{ block.settings[key_background_gradient] }};
+          {% else %}
+          --ss-gradient-background: {{ block.settings[key_background] }};
+          {% endif %}
+
+          {% liquid
+          assign background_color = block.settings[key_background]
+          assign background_color_brightness = background_color | color_brightness
+          if background_color_brightness <= 26
+              assign background_color_contrast = background_color | color_lighten: 50
+          elsif background_color_brightness <= 65
+              assign background_color_contrast = background_color | color_lighten: 5
+          else
+              assign background_color_contrast = background_color | color_darken: 25
+          endif
+          %}
+      --ss-color-foreground: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
+      --ss-color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
+      --ss-color-button: {{ block.settings[key_button_color].red }},{{ block.settings[key_button_color].green }},{{ block.settings[key_button_color].blue }};
+      --ss-color-button-text: {{ block.settings[key_button_label_color].red }},{{ block.settings[key_button_label_color].green }},{{ block.settings[key_button_label_color].blue }};
+      --ss-color-secondary-button: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
+      --ss-color-secondary-button-text: {{ block.settings[key_secondary_button_label_color].red }},{{ block.settings[key_secondary_button_label_color].green }},{{ block.settings[key_secondary_button_label_color].blue }};
+      --ss-color-link: {{ block.settings[key_secondary_button_label_color].red }},{{ block.settings[key_secondary_button_label_color].green }},{{ block.settings[key_secondary_button_label_color].blue }};
   }
 </style>
 

@@ -17,17 +17,17 @@
         "ss_color_schemes_v_1_0_PfnV3E": {
           "type": "_ss-color-schemes-v-1-0",
           "settings": {
-            "text1": "#121212",
-            "background1": "#ffffff",
+            "text1": "#ffffff",
+            "background1": "#000000",
             "background_gradient1": "",
-            "button1": "#000000",
-            "button_label1": "#ffffff",
-            "secondary_button_label1": "#121212",
+            "button1": "#26ffff",
+            "button_label1": "#000000",
+            "secondary_button_label1": "#ffffff",
             "text2": "#ffffff",
-            "background2": "#121212",
+            "background2": "rgba(0,0,0,0)",
             "background_gradient2": "",
-            "button2": "#ffffff",
-            "button_label2": "#121212",
+            "button2": "#26ffff",
+            "button_label2": "#000000",
             "secondary_button_label2": "#ffffff",
             "text3": "#121212",
             "background3": "#ffffff",
@@ -78,10 +78,20 @@
             "button_label10": "#ffffff",
             "secondary_button_label10": "#121212"
           }
+        },
+        "ss_typography_v_1_0_bDUAKR": {
+          "type": "_ss-typography-v-1-0",
+          "settings": {
+            "type_header_font": "futura_n8",
+            "heading_scale": 120,
+            "type_body_font": "assistant_n4",
+            "body_scale": 100
+          }
         }
       },
       "block_order": [
-        "ss_color_schemes_v_1_0_PfnV3E"
+        "ss_color_schemes_v_1_0_PfnV3E",
+        "ss_typography_v_1_0_bDUAKR"
       ],
       "settings": {}
     },

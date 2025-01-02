@@ -3,38 +3,38 @@
 <style>
   /** _global-color-schemes.liquid */
   {% for i in (1..10) -%}
+      {%-liquid
+          # NOTE: CHANGES HERE MUST BE REFLECTED IN
+          #  - blocks/_ss-color-schemes.liquid -- this file
+          #  - blocks/_ss-color-scheme.liquid
+          #  - tailwind.config.js
+          assign background = 'background' | append: i
+          assign background_gradient = 'background_gradient' | append: i
+          assign text = 'text' | append: i
+          assign button = 'button' | append: i
+          assign button_label = 'button_label' | append: i
+          assign secondary_button_label = 'secondary_button_label' | append: i
+      -%}
+
       {% assign scheme_class = '.ss-color-scheme_' | append: i %}
       {% assign scheme_class_mobile = '.sm:ss-color-scheme_' | append: i %}
 
       {% assign scheme_classes = scheme_classes | append: ', ' | append: scheme_class %}
       {% assign scheme_classes_mobile = scheme_classes_mobile | append: ', ' | append: scheme_class_mobile %}
 
-      {% if i == 1 -%}
-          body .ss-section,
-          body .ss-block,
+      {% if forloop.index == 1 -%}
+          :root,
       {%- endif %}
-      {%-liquid
-          # NOTE: CHANGES HERE MUST BE REFLECTED IN
-          #  - blocks/_global-color-schemes.liquid -- this file
-          #  - blocks/_ss-color-scheme.liquid
-          #  - tailwind.config.js
-          assign key_background = 'background' | append: i
-          assign key_background_gradient = 'background_gradient' | append: i
-          assign key_text = 'text' | append: i
-          assign key_button_color = 'button' | append: i
-          assign key_button_label_color = 'button_label' | append: i
-          assign key_secondary_button_label_color = 'secondary_button_label' | append: i
-      -%}
-      body {{ scheme_class }} {
-          --color-background: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
-          {% if block.settings[key_background_gradient] != empty %}
-          --gradient-background: {{ block.settings[key_background_gradient] }};
+      {{ scheme_class }} {
+          --ss-color-background: {{ block.settings[background] }};
+          {% if block.settings[background_gradient] != empty %}
+          --ss-gradient-background: {{ block.settings[background_gradient] }};
           {% else %}
-          --gradient-background: {{ block.settings[key_background] }};
+          --ss-gradient-background: {{ block.settings[background] }};
           {% endif %}
 
           {% liquid
-          assign background_color = block.settings[key_background]
+          assign background_color = block.settings[background]
           assign background_color_brightness = background_color | color_brightness
           if background_color_brightness <= 26
               assign background_color_contrast = background_color | color_lighten: 50
@@ -45,20 +45,21 @@
           endif
           %}
 
-          --color-foreground: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
-          --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
-          --color-button: {{ block.settings[key_button_color].red }},{{ block.settings[key_button_color].green }},{{ block.settings[key_button_color].blue }};
-          --color-button-text: {{ block.settings[key_button_label_color].red }},{{ block.settings[key_button_label_color].green }},{{ block.settings[key_button_label_color].blue }};
-          --color-secondary-button: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
-          --color-secondary-button-text: {{ block.settings[key_secondary_button_label_color].red }},{{ block.settings[key_secondary_button_label_color].green }},{{ block.settings[key_secondary_button_label_color].blue }};
-          --color-link: {{ block.settings[key_secondary_button_label_color].red }},{{ block.settings[key_secondary_button_label_color].green }},{{ block.settings[key_secondary_button_label_color].blue }};
+          --ss-color-foreground: {{ block.settings[text].red }},{{ block.settings[text].green }},{{ block.settings[text].blue }};
+          --ss-color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
+          --ss-color-button: {{ block.settings[button].red }},{{ block.settings[button].green }},{{ block.settings[button].blue }};
+          --ss-color-button-text: {{ block.settings[button_label].red }},{{ block.settings[button_label].green }},{{ block.settings[button_label].blue }};
+          --ss-color-secondary-button: {{ block.settings[background].red }},{{ block.settings[background].green }},{{ block.settings[background].blue }};
+          --ss-color-secondary-button-text: {{ block.settings[secondary_button_label].red }},{{ block.settings[secondary_button_label].green }},{{ block.settings[secondary_button_label].blue }};
+          --ss-color-link: {{ block.settings[secondary_button_label].red }},{{ block.settings[secondary_button_label].green }},{{ block.settings[secondary_button_label].blue }};
       }
   {% endfor %}
 
-  {{ scheme_classes | prepend: 'body .ss-section, body .ss-block' }},
-  {{ scheme_classes_mobile | prepend: 'body .ss-section, body .ss-block' }} {
-      color: rgba(var(--color-foreground), 1);
-      background-color: rgba(var(--color-background-surface), var(--color-background-surface-alpha, 1));
+  {% assign schema_classes_section = scheme_classes | prepend: '.ss-section ' %}
+  {% assign schema_classes_block = scheme_classes | prepend: '.ss-block ' %}
+  {{ schema_classes_section }}, {{ schema_classes_block }} {
+      color: rgba(var(--ss-color-foreground), 1);
+      background-color: var(--ss-color-background);
   }
 </style>
 
@@ -708,12 +709,12 @@
               assign key_shadow = 'shadow_color' | append: i
           -%}
           body {{ scheme_class }} {
-              --color-background-surface: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
-              --color-background-surface-alpha: {{ block.settings[key_background].alpha }};
+              --ss-color-background-surface: {{ block.settings[key_background].red }},{{ block.settings[key_background].green }},{{ block.settings[key_background].blue }};
+              --ss-color-background-surface-alpha: {{ block.settings[key_background].alpha }};
               {% if block.settings[key_background_gradient] != empty %}
-                  --gradient-background: {{ block.settings[key_background_gradient] }};
+                  --ss-gradient-background: {{ block.settings[key_background_gradient] }};
               {% else %}
-                  --gradient-background: {{ block.settings[key_background] }};
+                  --ss-gradient-background: {{ block.settings[key_background] }};
               {% endif %}
               --color-text-on-surface: {{ block.settings[key_text_on_surface].red }},{{ block.settings[key_text_on_surface].green }},{{ block.settings[key_text_on_surface].blue }};
               --color-text-on-surface-variant: {{ block.settings[key_text_on_surface_variant].red }},{{ block.settings[key_text_on_surface_variant].green }},{{ block.settings[key_text_on_surface_variant].blue }};
@@ -723,7 +724,7 @@
               --color-secondary: {{ block.settings[key_secondary_button_background].red }},{{ block.settings[key_secondary_button_background].green }},{{ block.settings[key_secondary_button_background].blue }};
               --color-on-secondary: {{ block.settings[key_on_secondary_button].red }},{{ block.settings[key_on_secondary_button].green }},{{ block.settings[key_on_secondary_button].blue }};
               --color-border-secondary: {{ block.settings[key_secondary_button_border].red }},{{ block.settings[key_secondary_button_border].green }},{{ block.settings[key_secondary_button_border].blue }};
-              --color-link: {{ block.settings[key_links].red }},{{ block.settings[key_links].green }},{{ block.settings[key_links].blue }};
+              --ss-color-link: {{ block.settings[key_links].red }},{{ block.settings[key_links].green }},{{ block.settings[key_links].blue }};
               --color-icons: {{ block.settings[key_icons].red }},{{ block.settings[key_icons].green }},{{ block.settings[key_icons].blue }};
               --color-shadow: {{ block.settings[key_shadow].red }},{{ block.settings[key_shadow].green }},{{ block.settings[key_shadow].blue }};
           }
@@ -731,8 +732,8 @@
 
       {{ scheme_classes | prepend: 'body .ss-section, body .ss-block' }},
       {{ scheme_classes_mobile | prepend: 'body .ss-section, body .ss-block' }} {
-          color: rgba(var(--color-foreground), 1);
-          background-color: rgba(var(--color-background-surface), var(--color-background-surface-alpha, 1));
+          color: rgba(var(--ss-color-foreground), 1);
+          background-color: rgba(var(--ss-color-background-surface), var(--ss-color-background-surface-alpha, 1));
       }
 
   </style>

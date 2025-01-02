@@ -9,89 +9,16 @@
  */
 {
   "sections": {
-    "ss_styles_v_1_0_77bNYz": {
-      "type": "ss-styles-v-1-0",
-      "blocks": {
-        "color_schemes_v_1_0_Mxwybi": {
-          "type": "_ss-color-schemes-v-1-0",
-          "settings": {
-            "text1": "#e40000",
-            "background1": "#ffffff",
-            "background_gradient1": "",
-            "button1": "#000000",
-            "button_label1": "#ffffff",
-            "secondary_button_label1": "#001aff",
-            "text2": "#121212",
-            "background2": "#ff0000",
-            "background_gradient2": "",
-            "button2": "#000000",
-            "button_label2": "#ffffff",
-            "secondary_button_label2": "#313039",
-            "text3": "#121212",
-            "background3": "#ffffff",
-            "background_gradient3": "",
-            "button3": "#000000",
-            "button_label3": "#ffffff",
-            "secondary_button_label3": "#ffffff",
-            "text4": "#121212",
-            "background4": "#ffffff",
-            "background_gradient4": "",
-            "button4": "#000000",
-            "button_label4": "#ffffff",
-            "secondary_button_label4": "#ffffff",
-            "text5": "#121212",
-            "background5": "#ffffff",
-            "background_gradient5": "",
-            "button5": "#000000",
-            "button_label5": "#ffffff",
-            "secondary_button_label5": "#ffffff",
-            "text6": "#121212",
-            "background6": "#ffffff",
-            "background_gradient6": "",
-            "button6": "#000000",
-            "button_label6": "#ffffff",
-            "secondary_button_label6": "#ffffff",
-            "text7": "#121212",
-            "background7": "#ffffff",
-            "background_gradient7": "",
-            "button7": "#000000",
-            "button_label7": "#ffffff",
-            "secondary_button_label7": "#ffffff",
-            "text8": "#121212",
-            "background8": "#ffffff",
-            "background_gradient8": "",
-            "button8": "#000000",
-            "button_label8": "#ffffff",
-            "secondary_button_label8": "#ffffff",
-            "text9": "#121212",
-            "background9": "#ffffff",
-            "background_gradient9": "",
-            "button9": "#000000",
-            "button_label9": "#ffffff",
-            "secondary_button_label9": "#ffffff",
-            "text10": "#121212",
-            "background10": "#ffffff",
-            "background_gradient10": "",
-            "button10": "#000000",
-            "button_label10": "#ffffff",
-            "secondary_button_label10": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "color_schemes_v_1_0_Mxwybi"
-      ],
-      "settings": {}
-    },
     "slideshow_UNkwik": {
       "type": "ss-slideshow-v-1-0",
       "blocks": {
         "slide_mEbteL": {
           "type": "_ss-slide-v-1-0",
           "settings": {
-            "image": "shopify://shop_images/theme_cover_image.jpg",
+            "image": "shopify://shop_images/Group_17848.png",
             "size": {
-              "max-width": "1366px"
+              "max-width": "1366px",
+              "height": "715px"
             },
             "spacing": {
               "@media (--mobile)": {
@@ -103,12 +30,13 @@
                 "margin-inline-start": "0px",
                 "margin-inline-end": "0px"
               },
-              "padding-block-start": "85px",
-              "padding-inline-start": "20px"
+              "padding-block-start": "50px",
+              "padding-inline-start": "50px",
+              "padding-block-end": "50px"
             },
             "layout": {
-              "flex-direction": "row",
-              "align-items": "center",
+              "flex-direction": "column",
+              "align-items": "flex-start",
               "justify-content": "flex-start",
               "align-content": "center",
               "@media (--mobile)": {
@@ -125,17 +53,17 @@
               "type": "ss-group-v-1-0",
               "settings": {
                 "size": {
-                  "width": "50%",
+                  "width": "80%",
                   "flex-grow": "0",
                   "@media (--mobile)": {
                     "width": "85%"
                   }
                 },
                 "spacing": {
-                  "padding-block-start": "50px",
-                  "padding-inline-end": "50px",
-                  "padding-block-end": "50px",
-                  "padding-inline-start": "50px",
+                  "padding-block-start": "0px",
+                  "padding-inline-end": "0px",
+                  "padding-block-end": "0px",
+                  "padding-inline-start": "0px",
                   "@media (--mobile)": {
                     "padding-block-start": "20px",
                     "padding-inline-end": "20px",
@@ -148,166 +76,40 @@
                   "justify-content": "flex-start",
                   "align-items": "flex-start"
                 },
-                "color_scheme": "scheme_1",
-                "color_scheme_mobile": "scheme_1"
+                "color_scheme": "scheme_2",
+                "color_scheme_mobile": "scheme_2"
               },
               "blocks": {
-                "text_BFbgT7": {
-                  "type": "ss-text-v-1-0",
-                  "settings": {
-                    "text": "<p>Tell your brand's story through images</p>",
-                    "text_style": "text-block-caption",
-                    "alignment": "start",
-                    "size": {},
-                    "spacing": {}
-                  }
-                },
                 "text_wWNYLa": {
                   "type": "ss-text-v-1-0",
                   "settings": {
-                    "text": "<h1>Tell your brand's story through images</h1>",
+                    "text": "<h1>WELCOME TO BEAST BITES SUPPLEMENTS</h1>",
                     "text_style": "",
                     "alignment": "start",
                     "size": {},
                     "spacing": {}
                   }
                 },
-                "group_fAyw9i": {
-                  "type": "ss-group-v-1-0",
-                  "settings": {
-                    "size": {},
-                    "spacing": {
-                      "padding-block-start": "20px",
-                      "padding-block-end": "0px",
-                      "padding-inline-start": "0px",
-                      "padding-inline-end": "0px"
-                    },
-                    "layout": {
-                      "justify-content": "flex-start",
-                      "flex-wrap": "wrap",
-                      "align-items": "flex-start",
-                      "flex-direction": "column",
-                      "row-gap": "0px",
-                      "column-gap": "20px"
-                    },
-                    "color_scheme": "scheme_2",
-                    "color_scheme_mobile": "scheme_2"
-                  },
-                  "blocks": {
-                    "link_CpwkAq": {
-                      "type": "ss-link-v-1-0",
-                      "settings": {
-                        "link": "",
-                        "label": "Primary button label",
-                        "style_class": "button-secondary",
-                        "open_in_new_tab": false,
-                        "icon": "none",
-                        "icon_position": "left",
-                        "size": {},
-                        "spacing": {
-                          "padding-block-start": "10px",
-                          "padding-inline-end": "30px",
-                          "padding-block-end": "10px",
-                          "padding-inline-start": "30px"
-                        }
-                      }
-                    },
-                    "link_TxA33M": {
-                      "type": "ss-link-v-1-0",
-                      "settings": {
-                        "link": "",
-                        "label": "Learn More",
-                        "style_class": "link",
-                        "open_in_new_tab": false,
-                        "icon": "none",
-                        "icon_position": "left",
-                        "size": {},
-                        "spacing": {
-                          "padding-inline-start": "29px",
-                          "padding-block-start": "4px"
-                        }
-                      }
-                    }
-                  },
-                  "block_order": [
-                    "link_CpwkAq",
-                    "link_TxA33M"
-                  ]
-                }
-              },
-              "block_order": [
-                "text_BFbgT7",
-                "text_wWNYLa",
-                "group_fAyw9i"
-              ]
-            }
-          },
-          "block_order": [
-            "group_AYLEbA"
-          ]
-        },
-        "slide_aWAGX7": {
-          "type": "_ss-slide-v-1-0",
-          "settings": {
-            "size": {},
-            "spacing": {},
-            "layout": {
-              "flex-direction": "row"
-            }
-          },
-          "blocks": {
-            "group_tX6xMR": {
-              "type": "ss-group-v-1-0",
-              "settings": {
-                "size": {
-                  "width": "50%",
-                  "flex-grow": "0",
-                  "@media (--mobile)": {
-                    "width": "100%"
-                  }
-                },
-                "spacing": {
-                  "padding-block-start": "50px",
-                  "padding-inline-end": "50px",
-                  "padding-block-end": "50px",
-                  "padding-inline-start": "50px",
-                  "@media (--mobile)": {
-                    "padding-block-start": "20px",
-                    "padding-inline-end": "20px",
-                    "padding-block-end": "20px",
-                    "padding-inline-start": "20px"
-                  }
-                },
-                "layout": {
-                  "flex-direction": "column",
-                  "justify-content": "flex-start"
-                },
-                "color_scheme": "scheme_1",
-                "color_scheme_mobile": "scheme_1"
-              },
-              "blocks": {
-                "text_ertfGh": {
+                "ss_text_v_1_0_mVtjrf": {
                   "type": "ss-text-v-1-0",
                   "settings": {
-                    "text": "<p>Tell your brand's story through images</p>",
+                    "text": "<p>Your workout routine with the best muscle growth supplements</p>",
                     "text_style": "",
                     "alignment": "start",
                     "size": {},
                     "spacing": {}
                   }
                 },
-                "link_cgTzUH": {
+                "ss_link_v_1_0_6LWpaX": {
                   "type": "ss-link-v-1-0",
                   "settings": {
                     "link": "",
-                    "label": "Button label",
+                    "label": "Buy Now",
                     "style_class": "button",
                     "open_in_new_tab": false,
-                    "icon": "none",
-                    "icon_position": "left",
-                    "size": {
-                      "width": "auto"
-                    },
+                    "icon": "arrow",
+                    "icon_position": "right",
+                    "size": {},
                     "spacing": {
                       "padding-block-start": "10px",
                       "padding-inline-end": "30px",
@@ -318,13 +120,14 @@
                 }
               },
               "block_order": [
-                "text_ertfGh",
-                "link_cgTzUH"
+                "text_wWNYLa",
+                "ss_text_v_1_0_mVtjrf",
+                "ss_link_v_1_0_6LWpaX"
               ]
             }
           },
           "block_order": [
-            "group_tX6xMR"
+            "group_AYLEbA"
           ]
         },
         "ss-slideshow-controls": {
@@ -336,14 +139,209 @@
         }
       },
       "block_order": [
-        "slide_mEbteL",
-        "slide_aWAGX7"
+        "slide_mEbteL"
       ],
-      "custom_css": [],
       "settings": {
-        "slide_height": "medium",
+        "slide_height": "adapt_image",
         "autoplay": false,
         "autoplay_speed": 4
+      }
+    },
+    "ss_custom_section_v_1_0_ctaxCf": {
+      "type": "ss-custom-section-v-1-0",
+      "blocks": {
+        "ss_group_v_1_0_8tYjfj": {
+          "type": "ss-group-v-1-0",
+          "settings": {
+            "size": {
+              "max-width": "1366px"
+            },
+            "spacing": {
+              "padding-block-start": "0px",
+              "padding-inline-end": "0px",
+              "padding-block-end": "0px",
+              "padding-inline-start": "0px",
+              "margin-block-start": "0px",
+              "margin-block-end": "0px",
+              "margin-inline-start": "0px",
+              "margin-inline-end": "0px"
+            },
+            "layout": {
+              "flex-direction": "row"
+            },
+            "color_scheme": "scheme_1",
+            "color_scheme_mobile": "scheme_1"
+          },
+          "blocks": {
+            "ss_group_v_1_0_LXtbbh": {
+              "type": "ss-group-v-1-0",
+              "settings": {
+                "size": {
+                  "width": "100%"
+                },
+                "spacing": {
+                  "padding-block-start": "20px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px"
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "center"
+                },
+                "color_scheme": "scheme_1",
+                "color_scheme_mobile": "scheme_1"
+              },
+              "blocks": {
+                "ss_image_v_1_0_4FTFKR": {
+                  "type": "ss-image-v-1-0",
+                  "settings": {
+                    "image": "shopify://shop_images/image_14.png",
+                    "object_fit": "cover",
+                    "spacing": {},
+                    "size": {
+                      "height": "200px"
+                    }
+                  }
+                },
+                "ss_text_v_1_0_rYjCyx": {
+                  "type": "ss-text-v-1-0",
+                  "settings": {
+                    "text": "<h3>MUSCLE BUILDING</h3>",
+                    "text_style": "",
+                    "alignment": "start",
+                    "size": {},
+                    "spacing": {}
+                  }
+                }
+              },
+              "block_order": [
+                "ss_image_v_1_0_4FTFKR",
+                "ss_text_v_1_0_rYjCyx"
+              ]
+            },
+            "ss_group_v_1_0_DnGG6R": {
+              "type": "ss-group-v-1-0",
+              "settings": {
+                "size": {
+                  "width": "100%"
+                },
+                "spacing": {
+                  "padding-block-start": "20px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px"
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "center"
+                },
+                "color_scheme": "scheme_1",
+                "color_scheme_mobile": "scheme_1"
+              },
+              "blocks": {
+                "ss_image_v_1_0_TqzaV4": {
+                  "type": "ss-image-v-1-0",
+                  "settings": {
+                    "image": "shopify://shop_images/image_16.png",
+                    "object_fit": "contain",
+                    "spacing": {
+                      "padding-block-start": "0px"
+                    },
+                    "size": {
+                      "height": "200px",
+                      "width": "100%",
+                      "flex-grow": "1"
+                    }
+                  }
+                },
+                "ss_text_v_1_0_dCrT3y": {
+                  "type": "ss-text-v-1-0",
+                  "settings": {
+                    "text": "<h3>SLEEP GUMMIES</h3>",
+                    "text_style": "",
+                    "alignment": "start",
+                    "size": {},
+                    "spacing": {}
+                  }
+                }
+              },
+              "block_order": [
+                "ss_image_v_1_0_TqzaV4",
+                "ss_text_v_1_0_dCrT3y"
+              ]
+            },
+            "ss_group_v_1_0_bMNCBM": {
+              "type": "ss-group-v-1-0",
+              "settings": {
+                "size": {
+                  "width": "100%"
+                },
+                "spacing": {
+                  "padding-block-start": "20px",
+                  "padding-inline-end": "20px",
+                  "padding-block-end": "20px",
+                  "padding-inline-start": "20px"
+                },
+                "layout": {
+                  "flex-direction": "column",
+                  "align-items": "center"
+                },
+                "color_scheme": "scheme_1",
+                "color_scheme_mobile": "scheme_1"
+              },
+              "blocks": {
+                "ss_image_v_1_0_HLpDwA": {
+                  "type": "ss-image-v-1-0",
+                  "settings": {
+                    "image": "shopify://shop_images/Group_17849.png",
+                    "object_fit": "cover",
+                    "spacing": {},
+                    "size": {
+                      "height": "200px"
+                    }
+                  }
+                },
+                "ss_text_v_1_0_tHVnCh": {
+                  "type": "ss-text-v-1-0",
+                  "settings": {
+                    "text": "<h3>BUNDLE & SAVE</h3>",
+                    "text_style": "",
+                    "alignment": "start",
+                    "size": {},
+                    "spacing": {}
+                  }
+                }
+              },
+              "block_order": [
+                "ss_image_v_1_0_HLpDwA",
+                "ss_text_v_1_0_tHVnCh"
+              ]
+            }
+          },
+          "block_order": [
+            "ss_group_v_1_0_LXtbbh",
+            "ss_group_v_1_0_DnGG6R",
+            "ss_group_v_1_0_bMNCBM"
+          ]
+        }
+      },
+      "block_order": [
+        "ss_group_v_1_0_8tYjfj"
+      ],
+      "settings": {
+        "spacing": {
+          "padding-block-start": "40px",
+          "padding-inline-end": "20px",
+          "padding-block-end": "40px",
+          "padding-inline-start": "20px"
+        },
+        "layout": {
+          "flex-direction": "column",
+          "align-items": "center"
+        },
+        "color_scheme": "scheme_1",
+        "color_scheme_mobile": "scheme_1"
       }
     },
     "custom_section_9k9gDW": {
@@ -1599,8 +1597,8 @@
     }
   },
   "order": [
-    "ss_styles_v_1_0_77bNYz",
     "slideshow_UNkwik",
+    "ss_custom_section_v_1_0_ctaxCf",
     "custom_section_9k9gDW",
     "custom_section_YdDxUb",
     "65a25908-415f-40aa-a6d4-00985cafbfac",
