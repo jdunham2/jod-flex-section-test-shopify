@@ -1,0 +1,276 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "ss_styles_v_1_0_KJJycj": {
+      "type": "ss-styles-v-1-0",
+      "blocks": {
+        "ss_color_schemes_v_1_0_PfnV3E": {
+          "type": "_ss-color-schemes-v-1-0",
+          "settings": {
+            "text1": "#ffffff",
+            "background1": "#000000",
+            "background_gradient1": "",
+            "button1": "#26ffff",
+            "button_label1": "#000000",
+            "secondary_button_label1": "#ffffff",
+            "text2": "#ffffff",
+            "background2": "rgba(0,0,0,0)",
+            "background_gradient2": "",
+            "button2": "#26ffff",
+            "button_label2": "#000000",
+            "secondary_button_label2": "#ffffff",
+            "text3": "#121212",
+            "background3": "#ffffff",
+            "background_gradient3": "",
+            "button3": "#000000",
+            "button_label3": "#ffffff",
+            "secondary_button_label3": "#121212",
+            "text4": "#121212",
+            "background4": "#ffffff",
+            "background_gradient4": "",
+            "button4": "#000000",
+            "button_label4": "#ffffff",
+            "secondary_button_label4": "#121212",
+            "text5": "#121212",
+            "background5": "#ffffff",
+            "background_gradient5": "",
+            "button5": "#000000",
+            "button_label5": "#ffffff",
+            "secondary_button_label5": "#121212",
+            "text6": "#121212",
+            "background6": "#ffffff",
+            "background_gradient6": "",
+            "button6": "#000000",
+            "button_label6": "#ffffff",
+            "secondary_button_label6": "#121212",
+            "text7": "#121212",
+            "background7": "#ffffff",
+            "background_gradient7": "",
+            "button7": "#000000",
+            "button_label7": "#ffffff",
+            "secondary_button_label7": "#121212",
+            "text8": "#121212",
+            "background8": "#ffffff",
+            "background_gradient8": "",
+            "button8": "#000000",
+            "button_label8": "#ffffff",
+            "secondary_button_label8": "#121212",
+            "text9": "#121212",
+            "background9": "#ffffff",
+            "background_gradient9": "",
+            "button9": "#000000",
+            "button_label9": "#ffffff",
+            "secondary_button_label9": "#121212",
+            "text10": "#121212",
+            "background10": "#ffffff",
+            "background_gradient10": "",
+            "button10": "#000000",
+            "button_label10": "#ffffff",
+            "secondary_button_label10": "#121212"
+          }
+        },
+        "ss_typography_v_1_0_bDUAKR": {
+          "type": "_ss-typography-v-1-0",
+          "settings": {
+            "type_header_font": "futura_n8",
+            "heading_scale": 120,
+            "type_body_font": "assistant_n4",
+            "body_scale": 100
+          }
+        }
+      },
+      "block_order": [
+        "ss_color_schemes_v_1_0_PfnV3E",
+        "ss_typography_v_1_0_bDUAKR"
+      ],
+      "settings": {}
+    },
+    "40cdc232-8dd8-427c-b8ab-98fcf3523e60": {
+      "type": "ss-custom-section-v-1-0",
+      "blocks": {
+        "9358ead7-959e-4cdd-b971-5a08e53c7729": {
+          "type": "ss-text-v-1-0",
+          "settings": {
+            "text": "<p>Welcome to the Flex sections developer preview</p>",
+            "text_style": "",
+            "alignment": "center",
+            "size": {
+              "width": "100%"
+            },
+            "spacing": {
+              "padding-block-start": "0px",
+              "padding-inline-end": "20px",
+              "padding-block-end": "0px",
+              "padding-inline-start": "20px"
+            }
+          }
+        }
+      },
+      "block_order": [
+        "9358ead7-959e-4cdd-b971-5a08e53c7729"
+      ],
+      "settings": {
+        "spacing": {
+          "padding-block-start": "6px",
+          "padding-inline-end": "0px",
+          "padding-block-end": "6px",
+          "padding-inline-start": "0px"
+        },
+        "layout": {
+          "flex-direction": "row",
+          "justify-content": "center"
+        },
+        "color_scheme": "scheme_2",
+        "color_scheme_mobile": "scheme_2"
+      }
+    },
+    "f80fab76-22f9-452e-ad08-16b13cc02cd6": {
+      "type": "ss-custom-section-v-1-0",
+      "blocks": {
+        "group_QwzE6T": {
+          "type": "ss-group-v-1-0",
+          "settings": {
+            "size": {
+              "width": "20%",
+              "@media (--mobile)": {
+                "width": "100%"
+              }
+            },
+            "spacing": {
+              "padding-block-start": "0px",
+              "padding-inline-end": "0px",
+              "padding-block-end": "0px",
+              "padding-inline-start": "0px"
+            },
+            "layout": {
+              "flex-direction": "row",
+              "justify-content": "flex-start"
+            },
+            "color_scheme": "scheme_1",
+            "color_scheme_mobile": "scheme_1"
+          },
+          "blocks": {
+            "heading_HeFnwz": {
+              "type": "ss-text-v-1-0",
+              "settings": {
+                "text": "<h2><a href=\"/\" title=\"/\">Store name</a></h2>",
+                "text_style": "",
+                "alignment": "start",
+                "size": {},
+                "spacing": {}
+              }
+            }
+          },
+          "block_order": [
+            "heading_HeFnwz"
+          ]
+        },
+        "group_MMGbDg": {
+          "type": "ss-group-v-1-0",
+          "settings": {
+            "size": {
+              "width": "80%",
+              "@media (--mobile)": {
+                "width": "100%"
+              }
+            },
+            "spacing": {
+              "padding-block-start": "0px",
+              "padding-inline-end": "0px",
+              "padding-block-end": "0px",
+              "padding-inline-start": "0px"
+            },
+            "layout": {
+              "flex-direction": "row",
+              "justify-content": "flex-end",
+              "@media (--mobile)": {
+                "justify-content": "flex-start"
+              }
+            },
+            "color_scheme": "",
+            "color_scheme_mobile": "scheme_1"
+          },
+          "blocks": {
+            "link_gCx6K6": {
+              "type": "ss-link-v-1-0",
+              "settings": {
+                "link": "https://github.com/Shopify/reference-theme/discussions",
+                "label": "Github discussion board",
+                "style_class": "link",
+                "open_in_new_tab": true,
+                "icon": "chat_bubble",
+                "icon_position": "left",
+                "size": {},
+                "spacing": {}
+              }
+            },
+            "link_qxd3Gx": {
+              "type": "ss-link-v-1-0",
+              "settings": {
+                "link": "https://shopify.dev/docs/themes/architecture/blocks/theme-blocks",
+                "label": "Developer documentation",
+                "style_class": "link",
+                "open_in_new_tab": true,
+                "icon": "question_mark",
+                "icon_position": "left",
+                "size": {},
+                "spacing": {}
+              }
+            },
+            "link_hj67zg": {
+              "type": "ss-link-v-1-0",
+              "settings": {
+                "link": "https://shopify.dev/docs/storefronts/themes/architecture/settings/style-settings",
+                "label": "Style settings documentation",
+                "style_class": "link",
+                "open_in_new_tab": true,
+                "icon": "question_mark",
+                "icon_position": "left",
+                "size": {},
+                "spacing": {}
+              }
+            }
+          },
+          "block_order": [
+            "link_gCx6K6",
+            "link_qxd3Gx",
+            "link_hj67zg"
+          ]
+        }
+      },
+      "block_order": [
+        "group_QwzE6T",
+        "group_MMGbDg"
+      ],
+      "settings": {
+        "spacing": {
+          "padding-block-start": "30px",
+          "padding-inline-end": "20px",
+          "padding-block-end": "30px",
+          "padding-inline-start": "20px"
+        },
+        "layout": {
+          "flex-direction": "row",
+          "justify-content": "space-between"
+        },
+        "color_scheme": "",
+        "color_scheme_mobile": "scheme_1"
+      }
+    }
+  },
+  "order": [
+    "ss_styles_v_1_0_KJJycj",
+    "40cdc232-8dd8-427c-b8ab-98fcf3523e60",
+    "f80fab76-22f9-452e-ad08-16b13cc02cd6"
+  ]
+}

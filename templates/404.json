@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "group": {
+      "type": "ss-custom-section-v-1-0",
+      "blocks": {
+        "heading_HzQryn": {
+          "type": "ss-text-v-1-0",
+          "settings": {
+            "text": "<h1>404</h1>",
+            "alignment": "start"
+          }
+        },
+        "text_4KQrBa": {
+          "type": "ss-text-v-1-0",
+          "settings": {
+            "text": "<p>Page not found.</p>",
+            "text_style": "",
+            "alignment": "start"
+          }
+        },
+        "link_xg7d8w": {
+          "type": "ss-link-v-1-0",
+          "settings": {
+            "link": "\/",
+            "label": "Go to Home page",
+            "style_class": "button",
+            "open_in_new_tab": false,
+            "icon": "none",
+            "icon_position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HzQryn",
+        "text_4KQrBa",
+        "link_xg7d8w"
+      ],
+      "settings": {
+        "layout": {
+          "flex-direction": "column",
+          "justify-content": "center"
+        },
+        "spacing": {
+          "padding": "100px 0"
+        },
+        "color_scheme": "scheme-2"
+      }
+    }
+  },
+  "order": [
+    "group"
+  ]
+}

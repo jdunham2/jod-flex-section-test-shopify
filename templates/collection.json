@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "ss-custom-section-v-1-0",
+      "blocks": {
+        "heading_mqAgUH": {
+          "type": "ss-text-v-1-0",
+          "settings": {
+            "text": "<h1>{{ closest.collection.title }}</h1>",
+            "alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mqAgUH"
+      ],
+      "settings": {
+        "spacing": {
+          "padding-block-end": "0px"
+        },
+        "layout": {
+          "justify-content": "flex-start"
+        }
+      }
+    },
+    "main-collection": {
+      "type": "ss-main-collection-v-1-0",
+      "blocks": {
+        "collection-product-card": {
+          "type": "ss-product-card-v-1-0",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}"
+          },
+          "blocks": {
+            "product_medias_Gawh7G": {
+              "type": "ss-product-medias-v-1-0",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "media_featured": true,
+              }
+            },
+            "title_zGnXr7": {
+              "type": "ss-product-title-v-1-0",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "heading_size": "h5",
+              }
+            },
+            "price_fiTWdm": {
+              "type": "ss-price-v-1-0",
+              "settings": {
+                "product": "{{ closest.product }}"
+              }
+            }
+          },
+          "block_order": [
+            "product_medias_Gawh7G",
+            "title_zGnXr7",
+            "price_fiTWdm"
+          ]
+        }
+      },
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection"
+  ]
+}
