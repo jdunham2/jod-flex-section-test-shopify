@@ -46,6 +46,63 @@
       "default": "h3"
     },
     {
+      "type": "header",
+      "content": "Text Customization"
+    },
+    {
+      "type": "select",
+      "id": "separation_character",
+      "label": "Symbol to Separate At",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "-",
+          "label": "Dash ( - )"
+        },
+        {
+          "value": "|",
+          "label": "Pipe ( | )"
+        },
+        {
+          "value": "|||",
+          "label": "Triple Pipe ( ||| )"
+        }
+      ],
+      "info": "Recommended Triple Pipe ( ||| )",
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "label": "Text Selector",
+      "id": "text_selector",
+      "options": [
+        {
+          "value": "before",
+          "label": "Before Symbol"
+        },
+        {
+          "value": "after",
+          "label": "After Symbol"
+        }
+      ],
+      "default": "before"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_text",
+      "label": "Highlight Text",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Highlighted Text Color",
+      "info": "Applies to text between stars. E.g. *Highlighted Text*"
+    },
+    {
       "type": "select",
       "id": "alignment",
       "label": "Alignment",

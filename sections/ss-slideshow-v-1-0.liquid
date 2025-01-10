@@ -19,29 +19,42 @@
   }
 
   .ss-slideshow--small .ss-slideshow__slides {
-    min-height: 28rem;
+    min-height: var(--ss-image-height-small-mobile);
   }
 
   .ss-slideshow--medium .ss-slideshow__slides {
-    min-height: 34rem;
+    min-height: var(--ss-image-height-medium-mobile);
   }
 
   .ss-slideshow--large .ss-slideshow__slides {
-    min-height: 39rem;
+    min-height: var(--ss-image-height-large-mobile);
+  }
+
+  .ss-slideshow--xlarge .ss-slideshow__slides {
+    min-height: var(--ss-image-height-xlarge-mobile);
   }
 
   @media screen and (min-width: 750px) {
     .ss-slideshow--small .ss-slideshow__slides {
-      min-height: 42rem;
+      min-height: var(--ss-image-height-small);
     }
 
     .ss-slideshow--medium .ss-slideshow__slides {
-      min-height: 56rem;
+      min-height: var(--ss-image-height-medium);
     }
 
     .ss-slideshow--large .ss-slideshow__slides {
-      min-height: 72rem;
+      min-height: var(--ss-image-height-large);
     }
+
+    .ss-slideshow--xlarge .ss-slideshow__slides {
+      min-height: var(--ss-image-height-xlarge);
+    }
+  }
+
+  .ss-slideshow--adapt_image .ss-slideshow__slides {
+    aspect-ratio: var(--aspect-ratio);
+    min-height: var(--adapt-height);
   }
 
   /* Individual slides */
@@ -129,6 +142,7 @@
 
   .ss-slide__image-container img {
     object-fit: cover;
+    object-position: var(--ss-image-position);
   }
 
   /* Slideshow controls */
@@ -439,8 +453,12 @@
 {% endjavascript %}
 
 <ss-slideshow-component
-  id='slideshow-{{ section.id }}'
-  class='ss-section ss-slideshow ss-slideshow--{{ section.settings.slide_height }}'
+  id='ss-slideshow-{{ section.id }}'
+  class='
+    ss-section
+    ss-slideshow
+    ss-slideshow--{{ section.settings.slide_height }}
+  '
   data-active-slide='0'
   data-autoplay='{{ section.settings.autoplay }}'
   {% if section.settings.autoplay %}
@@ -486,10 +504,14 @@
         {
           "value": "large",
           "label": "Large"
+        },
+        {
+          "value": "xlarge",
+          "label": "Xlarge"
         }
       ],
       "default": "medium",
-      "label": "Slide height"
+      "label": "Slide Height"
     },
     {
       "type": "header",

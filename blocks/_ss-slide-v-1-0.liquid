@@ -11,15 +11,15 @@
 -%}
 
 <div
-  id='slide-{{ block.id }}'
+  id='ss-slide-{{ block.id }}'
   class='ss-slideshow__slide ss-block'
   aria-hidden='{% if blockIndex == 1 %}false{% else %}true{% endif %}'
   {{ block.shopify_attributes }}
 >
   {% style %}
     {%- if section.settings.slide_height == 'adapt_image' and blockIndex == 1 and block.settings.image != blank -%}
-      #slideshow-{{ section.id }} .slideshow__slides,
-      #slideshow-{{ section.id }} .slideshow__slide {
+      #ss-slideshow-{{ section.id }} .ss-slideshow__slides,
+      #ss-slideshow-{{ section.id }} .ss-slideshow__slide {
         min-height: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}vw;
       }
     {%- endif -%}
@@ -31,48 +31,40 @@
         assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
         assign sizes = '100vw'
         assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-        # MM - Add mobile image
-        assign ss_mobile_image = block.settings.ss_mobile_image
-        if ss_mobile_image == blank
-          assign ss_mobile_image = block.settings.image
-        endif
+        assign style = '--ss-image-position: ' | append: block.settings.image_position | append: ';'
+
+        assign ss_mobile_image = block.settings.ss_mobile_image | default: block.settings.image
         assign mobile_height = ss_mobile_image.width | divided_by: ss_mobile_image.aspect_ratio | round
         assign mobile_sizes = '100vw'
         assign mobile_widths = '375, 550, 750, 1100, 1500'
+
+        assign loading = 'lazy'
+        if blockIndex == 1 and section.index == 1
+          assign loading = 'eager'
+        endif
       -%}
-      {%- if blockIndex == 1 -%}
-        {{
-          block.settings.image
-          | image_url: width: 3840
-          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager', class: 'sm:tw-hidden md:tw-block'
-        }}
-        {{
-          ss_mobile_image
-          | image_url: width: 1500
-          | image_tag:
-            height: mobile_height,
-            sizes: mobile_sizes,
-            widths: mobile_widths,
-            loading: 'eager',
-            class: 'md:tw-hidden'
-        }}
-      {%- else -%}
-        {{
-          block.settings.image
-          | image_url: width: 3840
-          | image_tag: height: height, sizes: sizes, widths: widths, loading: 'lazy', class: 'sm:tw-hidden'
-        }}
-        {{
-          ss_mobile_image
-          | image_url: width: 1500
-          | image_tag:
-            height: mobile_height,
-            sizes: mobile_sizes,
-            widths: mobile_widths,
-            loading: 'lazy',
-            class: 'md:tw-hidden'
-        }}
-      {%- endif -%}
+      {{
+        block.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          height: height,
+          sizes: sizes,
+          widths: widths,
+          loading: loading,
+          class: 'ss-visibility-desktop',
+          style: style
+      }}
+      {{
+        ss_mobile_image
+        | image_url: width: 1500
+        | image_tag:
+          height: mobile_height,
+          sizes: mobile_sizes,
+          widths: mobile_widths,
+          loading: loading,
+          class: 'ss-visibility-mobile',
+          style: style
+      }}
     {%- else -%}
       {%- assign placeholder_slide = blockIndex | modulo: 2 -%}
       {%- if placeholder_slide == 1 -%}
@@ -102,6 +94,37 @@
       "type": "image_picker",
       "id": "ss_mobile_image",
       "label": "Mobile Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Focus",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "left", "label": "Left" },
+        { "value": "left top", "label": "Left Top" },
+        { "value": "left bottom", "label": "Left Bottom" },
+        { "value": "right", "label": "Right" },
+        { "value": "right top", "label": "Right Top" },
+        { "value": "right bottom", "label": "Right Bottom" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "default": 0,
+      "min": 0,
+      "max": 100
     },
     {
       "type": "style.size_panel",

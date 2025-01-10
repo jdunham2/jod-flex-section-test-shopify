@@ -6,19 +6,42 @@
   }
 
   .ss-image-banner--small {
-    min-height: 300px;
+    min-height: var(--ss-image-height-small-mobile);
   }
 
   .ss-image-banner--medium {
-    min-height: 400px;
+    min-height: var(--ss-image-height-medium-mobile);
   }
 
   .ss-image-banner--large {
-    min-height: 500px;
+    min-height: var(--ss-image-height-large-mobile);
   }
 
-  .ss-image-banner--adapt {
+  .ss-image-banner--xlarge {
+    min-height: var(--ss-image-height-xlarge-mobile);
+  }
+
+  @media screen and (min-width: 750px) {
+    .ss-image-banner--small {
+      min-height: var(--ss-image-height-small);
+    }
+
+    .ss-image-banner--medium {
+      min-height: var(--ss-image-height-medium);
+    }
+
+    .ss-image-banner--large {
+      min-height: var(--ss-image-height-large);
+    }
+
+    .ss-image-banner--xlarge {
+      min-height: var(--ss-image-height-xlarge);
+    }
+  }
+
+  .ss-image-banner--adapt_image {
     aspect-ratio: var(--aspect-ratio);
+    min-height: var(--adapt-height);
   }
 
   .ss-image-banner > *:not(.ss-image-banner__image-wrapper) {
@@ -68,8 +91,22 @@
 {% endstylesheet %}
 
 <div
-  class='{{ section.settings | class_list }} ss-full-width ss-color-{{ section.settings.color_scheme }} sm:ss-color-{{ section.settings.color_scheme_mobile }} ss-image-banner {% if section.settings.first_image != blank and section.settings.second_image != blank %} ss-image-banner--two-images{% endif %}'
-  style='--overlay-opacity: {{ section.settings.overlay_opacity | times: 1.00 | divided_by: 100 }}; --aspect-ratio: {{ section.settings.first_image.aspect_ratio }}'
+  class='
+    {{ section.settings | class_list }}
+    ss-full-width
+    ss-color-{{ section.settings.color_scheme }}
+    sm:ss-color-{{ section.settings.color_scheme_mobile }}
+    ss-image-banner
+    ss-image-banner--{{ section.settings.image_height }}
+    {% if section.settings.first_image != blank and section.settings.second_image != blank %}
+     ss-image-banner--two-images
+    {% endif %}
+  '
+  style='
+    --overlay-opacity: {{ section.settings.overlay_opacity | times: 1.00 | divided_by: 100 }};
+    --aspect-ratio: {{ section.settings.first_image.aspect_ratio }};
+    --adapt-height: {{ 1 | divided_by: section.settings.first_image.aspect_ratio | times: 100 }}vw;
+  '
 >
   <div class='ss-image-banner__image-wrapper'>
     {%- if section.settings.first_image != blank -%}
@@ -123,6 +160,34 @@
       "default": 20
     },
     {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt_image",
+          "label": "Adapt to first image"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xlarge",
+          "label": "Xlarge"
+        }
+      ],
+      "default": "medium",
+      "label": "Height"
+    },
+    {
       "type": "style.spacing_panel",
       "id": "spacing",
       "label": "Spacing",
@@ -144,10 +209,6 @@
           "flex-wrap": "wrap"
         }
       }
-    },
-    {
-      "type": "header",
-      "content": "Color"
     },
     {
       "type": "header",
@@ -252,7 +313,7 @@
       ],
       "id": "color_scheme_mobile",
       "default": "scheme_1",
-      "label": "Color Scheme",
+      "label": "Color (Mobile)",
       "info": "To use color scheme: Step 1: Hide color block in section. Step 2: Customize colors in color block of “✧Styles” section in global area. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
     }
   ],

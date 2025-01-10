@@ -111,18 +111,36 @@
   --tw-contain-style:  
 }
 
+.tw-absolute {
+  position: absolute !important
+}
+
+.tw-relative {
+  position: relative !important
+}
+
+.tw-overflow-hidden {
+  overflow: hidden !important
+}
+
+/* SS Visibility */
+
+@media (min-width: 750px) {
+  .ss-visibility-mobile {
+    display: none
+  }
+}
+
 @media (min-width: 320px) {
-  .sm\:tw-hidden {
-    display: none !important
+  .ss-visibility-desktop {
+    display: none
   }
 }
 
 @media (min-width: 750px) {
-  .md\:tw-block {
-    display: block !important
-  }
-
-  .md\:tw-hidden {
-    display: none !important
+  .ss-visibility-desktop {
+    display: block
   }
 }
+
+/* SS Visibility End */
